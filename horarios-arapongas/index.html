@@ -16,64 +16,28 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <script 
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+           <script> 
+            $(function(){
+                $("#MainMenu").fetch("/components/menu.html"); 
+            });
+       </script>  
     </head>
 
     <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Horários do IFPR Campus Avançado Arapongas</a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="menuPrincipal">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                <!-- Menu Turmas -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="turmasDropdown" role="button" data-bs-toggle="dropdown">
-                        Turmas
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Cadastrar Turma</a></li>
-                        <li><a class="dropdown-item" href="#">Listar Turmas</a></li>
-                        <li><a class="dropdown-item" href="#">Editar Turma</a></li>
-                    </ul>
-                </li>
-
-                <!-- Menu Salas -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="salasDropdown" role="button" data-bs-toggle="dropdown">
-                        Salas
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Cadastrar Sala</a></li>
-                        <li><a class="dropdown-item" href="#">Listar Salas</a></li>
-                        <li><a class="dropdown-item" href="#">Editar Sala</a></li>
-                    </ul>
-                </li>
-                 <!-- Menu Docentes -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="docentesDropdown" role="button" data-bs-toggle="dropdown">
-                        Salas
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Cadastrar Sala</a></li>
-                        <li><a class="dropdown-item" href="#">Listar Salas</a></li>
-                        <li><a class="dropdown-item" href="#">Editar Sala</a></li>
-                    </ul>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-</nav>
+        <header >
+            <div id="MainMenu"></div>
         </header>
         <main>
-            <h1>Olá mundo</h1>
+            <h1>Quadro de Horários do IFPR Campus Avançado Arapongas</h1>
+            <p>Seja bem-vindo ao novo sistema web para o quadro de horários do Instituto Federal do Paraná do Campus Avançado Arapongas. 
+            </p>
+            <p>Nesse portal você organiza sua vida acadêmica e fica por dentro dos horários de funcionamento e atendimento do campus.
+            </p>
         </main>
+
         <footer>
             <!-- place footer here -->
         </footer>
@@ -89,5 +53,7 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+
+        
     </body>
 </html>
