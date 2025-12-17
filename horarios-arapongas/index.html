@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Quadro de Horários</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -13,9 +13,10 @@
         <script 
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
         </script>
-           <script> 
+        <script> 
             $(function(){
-                $("#MainMenu").load("https://rafaelssantos.github.io/horarios-arapongas/components/menu.html"); 
+                $("#MainMenu").load("https://rafaelssantos.github.io/horarios-arapongas/components/menu.html");
+                $("#MainFooter").load("https://rafaelssantos.github.io/horarios-arapongas/components/footer.html"); 
             });
        </script>  
     </head>
@@ -27,11 +28,13 @@
         <div class="container-fluid m-0 p-5 text-center" id="MainBanner">
 
             <h1>Quadro de Horários do IFPR - Campus Avançado Arapongas</h1>
+        </div>
+        <main class="p-5 text-center">
             <p>Seja bem-vindo ao novo sistema web para o quadro de horários do Instituto Federal do Paraná do Campus Avançado Arapongas. 
             </p>
             <p>Nesse portal você organiza sua vida acadêmica e fica por dentro dos horários de funcionamento e atendimento do campus.
             </p>
-        </div>
+        </main>
 
         <footer>
             <!-- place footer here -->
@@ -48,6 +51,8 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
-       
+        <footer>
+            <div id="MainFooter"></div>
+        </footer>
     </body>
 </html>
